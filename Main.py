@@ -1,3 +1,5 @@
+from Calculadora.operacoes_simples import somar
+
 if __name__ == "__main__":
     
     opcao = -1
@@ -11,7 +13,11 @@ if __name__ == "__main__":
         opcao = int(input('Opção: '))
 
         if opcao == 1:
-            print('Opção Somar')
+            operador1 = int(input('Operador 1: '))
+            operador2 = int(input('Operador 2: '))
+            resultado = somar(operador1, operador2)
+            print(f'Resultado: {resultado}')
+
         elif opcao == 2:
             print('Opção Subtrair')
         elif opcao == 3:
