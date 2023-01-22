@@ -1,4 +1,5 @@
-from Calculadora.operacoes_simples import somar
+
+from Calculadora.operacoes_simples import somar, subtrair
 
 if __name__ == "__main__":
     
@@ -19,7 +20,10 @@ if __name__ == "__main__":
             print(f'Resultado: {resultado}')
 
         elif opcao == 2:
-            print('Opção Subtrair')
+            operador1 = int(input('Operador 1: '))
+            operador2 = int(input('Operador 2: '))
+            resultado = subtrair(operador1, operador2)
+            print(f'Resultado: {resultado}')
         elif opcao == 3:
             print('Obrigado por usar nossa Calculadora GIT')
         else:
